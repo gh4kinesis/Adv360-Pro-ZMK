@@ -34,9 +34,16 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_email1 {
+        combo1_email1 {
             bindings = <&email1>;
             key-positions = <35 41>;
+            layers = <0>;
+        };
+
+        combo2_email1 {
+            bindings = <&email1>;
+            key-positions = <41 38>;
+            layers = <0>;
         };
     };
 
