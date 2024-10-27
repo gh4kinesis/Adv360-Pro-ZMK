@@ -39,13 +39,23 @@
             key-positions = <38 31>;
             layers = <0>;
         };
+
+        combo_lcmd_h {
+            bindings = <&email1>;
+            key-positions = <35 41>;
+        };
     };
 
     macros {
         email1: email1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp H &kp U &kp G &kp H &kp AT &kp S &kp T &kp E &kp W &kp A &kp R &kp T &kp M &kp A &kp I &kp L &kp DOT &kp O &kp R &kp G>;
+            bindings =
+                <&macro_release>,
+                <&kp LCMD &kp H>,
+                <&macro_press>,
+                <&kp H &kp U &kp G &kp H &kp AT &kp S &kp T &kp E &kp W &kp A &kp R &kp T &kp M &kp A &kp I &kp L &kp DOT &kp O &kp R &kp G>;
+
             label = "EMAIL1";
         };
     };
