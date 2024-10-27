@@ -34,16 +34,18 @@
     combos {
         compatible = "zmk,combos";
 
-        combo1_email1 {
+        combo_lcmd_h {
             bindings = <&email1>;
             key-positions = <35 41>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
-        combo2_email1 {
+        combo_rcmd_h {
             bindings = <&email1>;
             key-positions = <41 38>;
             layers = <0>;
+            timeout-ms = <50>;
         };
     };
 
@@ -53,6 +55,8 @@
             #binding-cells = <0>;
             bindings = <&kp H &kp U &kp G &kp H &kp AT &kp S &kp T &kp E &kp W &kp A &kp R &kp T &kp M &kp A &kp I &kp L &kp DOT &kp O &kp R &kp G>;
             label = "EMAIL1";
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
     };
 
